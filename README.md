@@ -10,7 +10,7 @@ The task of text summarization is often difficult to automate because of sparse 
 ## Repository Description
 
 Our work was mostly implemented and compiled in Jupyter Notebooks. Here is a description of each of the files and directories in this repository.
-- text_vectorization.ipynb
+- text_vectorization.ipynb: Contains the pre-processing methods we used to extract document and sentence embeddings from the news articles. All the pre-processing work was done separately, and the embeddings were stored as Pickle files to be streamlined into the model later. To use the model, it is not necessary to run this notebook; it simply contains our pre-processing approach and work.
 - DQN-modified.ipynb
 - data: A directory that contains raw text of the news articles as well as Pickle files with the embeddings of the articles. You can view [the directory here](https://drive.google.com/drive/folders/1_8RYwoHSEWnujQqj0FLA3AcB58uB_u2P?usp=sharing), as its contents are too large for the GitHub file size limits.
   - articles1.csv: raw text of news articles
