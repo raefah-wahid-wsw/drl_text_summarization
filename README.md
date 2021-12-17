@@ -11,7 +11,7 @@ The task of text summarization is often difficult to automate because of sparse 
 
 Our work was mostly implemented and compiled in Jupyter Notebooks. Here is a description of each of the files and directories in this repository.
 - text_vectorization.ipynb: Contains the pre-processing methods we used to extract document and sentence embeddings from the news articles. All the pre-processing work was done separately, and the embeddings were stored as Pickle files to be streamlined into the model later. To use the model, it is not necessary to run this notebook; it simply contains our pre-processing approach and work.
-- DQN-modified.ipynb
+- DQN_Text_Summarization.ipynb: Contains the DQN model and reward system, as well as post-processing to convert the vectorized summary into a text-readable format.
 - data: A directory that contains raw text of the news articles as well as Pickle files with the embeddings of the articles. You can view [the directory here](https://drive.google.com/drive/folders/1_8RYwoHSEWnujQqj0FLA3AcB58uB_u2P?usp=sharing), as its contents are too large for the GitHub file size limits.
   - articles1.csv: raw text of news articles
   - batch1…batch20: Pickle files of the document and sentence embeddings
@@ -19,9 +19,7 @@ Our work was mostly implemented and compiled in Jupyter Notebooks. Here is a des
 
 ## Commands
 
-In order to run our project, we compiled a demo notebook that uses our saved model to produce text summarizations.
-
-// instructions 
+In order to run our project, clone this repository and open the notebook entitled DQN_Text_Summarization.ipynb. In that notebook, scroll down to the section entitled "Demo" and run the cells for that section. This section of the notebook loads a pre-trained model for your use. You will need the data linked in the Google Drive folder linked in the section above, and may need to adjust some of the file paths.
 
 
 ## Results
