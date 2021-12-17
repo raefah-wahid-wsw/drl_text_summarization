@@ -26,8 +26,8 @@ In order to run our project, we compiled a demo notebook that uses our saved mod
 
 ## Results
 
-![loss](loss.png)
+![loss](results/loss.png)
 
-![bleu](bleu.png)
+![bleu](results/bleu.png)
 
 The loss does decrease steadily over the course of the model’s training. The BLEU metric fluctuates quite a bit and shows an overall gradual upward trend, but it is not by much. On the whole, this makes sense since we shouldn’t expect any vast improvement in readability (which the BLEU metric primarily speaks to) as we are pulling sentences from text that is already human-verified to be readable. Despite our initial thoughts, the BLEU metric did not encourage brevity and the reward system that incorporated it tended to produce summaries that only knocked one or two sentences off the original article. This speaks back to an issue of finding an appropriate reward system for something as subjective as natural language. For future steps, it might be worthwhile to borrow techniques from information theory to more adequately measure and score the information conveyed by a summary, alongside the BLEU metric.
